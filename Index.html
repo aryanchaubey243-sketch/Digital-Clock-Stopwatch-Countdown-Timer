@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <link rel="stylesheet" href="learning.css">
+</head>
+
+<body>
+
+  <div id="container">
+    <div id="tabs">
+      <button id="Btn1" class="buttons">Digital Clock</button>
+      <button id="Btn2" class="buttons">Stopwatch</button>
+      <button id="Btn3" class="buttons">Timer</button>
+    </div>
+    <div id="content">
+      
+      <!-- Digital Clock Section -->
+      <section id="Digital-Clock-section">
+        <div id="clk-digital">
+          <input id="inp1" class="inpclk" type="number" readonly>
+          <p id="p1" class="pa">:</p>
+          <input id="inp2" class="inpclk" type="number" readonly>
+          <p id="p2" class="pa">:</p>
+          <input id="inp3" class="inpclk" type="number" readonly>
+          <p id="p3" class="pa">:</p>
+          <input id="inp4" class="inpclk" type="number" readonly>
+        </div>
+      </section>
+
+      <!-- Stopwatch Section -->
+      <section id="Stopwatch-section">
+        <div id="sw-wrapper">
+          <div id="clk-stopwatch">
+            <h2 id="head1" class="hea1">00</h2>
+            <p id="ps1" class="pas">:</p>
+            <h2 id="head2" class="hea1">00</h2>
+            <p id="ps2" class="pas">:</p>
+            <h2 id="head3" class="hea1">00</h2>
+            <p id="ps3" class="pas">:</p>
+            <h2 id="head4" class="hea1">00</h2>
+          </div>
+          <div id="sw-controls">
+            <button id="cbtn1" class="btn_start">Start</button>
+            <button id="cbtn2" class="btn_start">Stop</button>
+            <button id="cbtn3" class="btn_start">Reset</button>
+            <button id="cbtn4" class="btn_start">Lap</button>
+          </div>
+          <ol id="list"></ol>
+        </div>
+      </section>
+
+      <!-- Timer Section -->
+      <section id="Timer-section">
+         <div id="tm-wrapper">
+          <h3>Set Timer</h3>
+          <div id="clk-timer">
+            <input type="number" id="tm-inp1" class="hea1" placeholder="00" min="0" max="23">
+            <p id="tm-ps1" class="pas">:</p>
+            <input type="number" id="tm-inp2" class="hea1" placeholder="00" min="0" max="59">
+            <p id="tm-ps2" class="pas">:</p>
+            <input type="number" id="tm-inp3" class="hea1" placeholder="00" min="0" max="59">
+          </div>
+          <div id="tm-controls">
+            <button id="tm-btn-start" class="btn_start">Start</button>
+            <button id="tm-btn-stop" class="btn_start">Stop</button>
+            <button id="tm-btn-reset" class="btn_start">Reset</button>
+          </div>
+         </div>
+      </section>
+
+    </div>
+  </div>
+  <script src="learning.js"></script>
+</body>
+
+</html>

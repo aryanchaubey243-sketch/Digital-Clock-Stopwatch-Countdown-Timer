@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #eef4fb;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#container {
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 13px 7px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+#tabs {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.buttons {
+  height: 35px;
+  width: 95px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  border: none;
+  background-color: #3d5893;
+  color: white;
+  transition: 0.2s;
+}
+
+.buttons:hover {
+  background-color: #1d4ed8;
+}
+
+#content {
+  min-height: 240px;
+  height: 300px;
+  width: 100%;
+  border: 2px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 20px;
+}
+
+#Digital-Clock-section {
+  background-color: #dbeafe;
+}
+
+#Stopwatch-section {
+  display: none;
+  background-color: #f0fdf4; /* Subtle green accent color for contrast */
+}
+
+#Timer-section {
+  display: none;
+  background-color: #fff7ed; /* Subtle orange accent color for contrast */
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Structural Layout Flexboxes */
+#clk-digital, #clk-stopwatch, #clk-timer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#sw-wrapper, #tm-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#sw-controls, #tm-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Form Fields and Typography */
+#tm-wrapper h3 {
+  margin-bottom: 12px;
+}
+
+.inpclk {
+  width: 45px;
+  height: 46px;
+  font-size: 25px;
+  text-align: center;
+  background-color: #dbeafe;
+  border: 2px solid black;
+}
+
+.pa, .pas {
+  font-weight: bold;
+  margin: 0 4px;
+}
+
+.hea1 {
+  height: 39px;
+  width: 52px;
+  border: 2px solid black;
+  font-weight: 600;
+  text-align: center;
+  font-size: 25px;
+}
+
+/* Input Fields specific settings */
+input.hea1 {
+  background-color: white;
+}
+
+.btn_start {
+  height: 35px;
+  width: 65px;
+  margin-top: 16px;
+  margin-left: 6px;
+  margin-right: 6px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #777;
+  background-color: #f3f4f6;
+  font-weight: bold;
+}
+
+.btn_start:hover,.btn_start {
+  background-color: #ac7458;
+  color: white;
+}
+
+/* Laps List Styling */
+#list {
+  border: 2px solid black;
+  width: 17em;
+  max-height: 110px; /* Scaled down slightly to fit cleanly inside content box container */
+  overflow-y: auto;
+  margin: 15px auto 0 auto;
+  padding: 5px;
+  list-style: none;
+  background-color: white;
+}
+
+.ol-divs, .ola {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.ol-lis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 6px;
+}
+
+.list-Par {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.paraas {
+  height: 32px;
+  width: 32px;
+  border: 2px solid black;
+  margin: 0 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  font-weight: bold;
+}
+
+.timer-colon {
+  font-weight: bold;
+  margin: 0 1px;
+}
+
+.btnx {
+  height: 32px;
+  width: 25px;
+  margin-left: 6px;
+  cursor: pointer;
+}
+
+.btnx:hover {
+  background-color: rgba(148, 44, 44, 0.507);
+  color: white;
+}
